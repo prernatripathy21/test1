@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/mern/csstask1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CSS Task 1</title>
+        <style>
+            #rcorner1{
+                border-radius:25px;
+                background:2px solid#73AD21;
+                padding: 20px; 
+                width: 100px;
+                height: 150px;  
+            }
+            #rcorner2{
+                border-radius:5px;
+                background:2px solid#72aa24;
+                padding: 20px; 
+                width: 10px;
+                height: 150px;  
+            }
+            #rcorner3{
+                border-radius:40px;
+                background:2px solid#73AD21;
+                padding: 20px; 
+                width: 10px;
+                height: 15px;  
+            }
+            #rcorner4{
+                border-radius:50px;
+                background:2px solid#73AD21;
+                padding: 20px; 
+                width: 10px;
+                height: 15px;  
+            }
+            #rcorner5{
+                border-radius:1px 10px 5px 35px;
+                background:2px solid#73AD21;
+                padding: 20px; 
+                width: 10px;
+                height: 15px;  
+            }
+
+            table, th, td{
+                border-radius:10px;
+                border:2px solid black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table border="1" bordercolor="black" bgcolor="#96D4D4" cellpadding="1" cellspacing="1" style="width: 80%">
+            <caption>Table for Task 1</caption>
+            <tbody><tr>    
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>      
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>  
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>  
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>  
+            </tr>
+        </tbody></table>
+    
+        <br>
+            <div id="rcorner1"></div>
+            <div id="rcorner2"></div>
+            <div id="rcorner3"></div>
+            <div id="rcorner1"></div>
+            <div id="rcorner2"></div>
+            <div id="rcorner3"></div>
+            <div id="rcorner4"></div>
+            <div id="rcorner2"></div>
+            <div id="rcorner5"></div>
+        
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

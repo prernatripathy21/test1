@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/mern/htmltask5.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>task 5</title>
+    </head>
+    <body>
+        <center>
+            <h2 style="color:Blue">Registration form</h2>
+            <form>
+              
+                <table border="1" cellspacing="1" cellpadding="1">
+                    <tbody><tr>
+                        <td><label for="fn">First Name </label></td>
+                        <td><input type="text" name="fn"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="fn">last name</label></td>
+                        <td><input type="text" name="fn"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fn">E-Mail</label></td>
+                        <td><input type="text" name="fn"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pwd">Password</label></td>
+                        <td><input type="password" id="pwd" name="pwd" minlength="8" maxlength="15"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pwd">Re-Enter Password</label></td>
+                        <td><input type="password" id="pwd" name="pwd" minlength="8" maxlength="15"></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2"><label>Gender</label></td>
+                        
+                            <td><input type="radio" name="gender">Male</td>
+                        
+
+                    </tr>
+                
+                    <tr><td><input type="radio" name="gender">Female</td></tr>
+
+                    <tr>
+                        <td><label for="fn"> Age </label></td>
+                        <td><input type="text" name="fn" maxlength="3"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fn"> Phone Number </label></td>
+                        <td><input type="text" name="fn" maxlength="10"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fn"> Address </label></td>
+                        <td><textarea></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fn">State</label></td>
+                        <td><input type="text" name="fn"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label>Country</label></td>
+                        <td>
+                            <select>
+                                <option>--Choose your country--</option>
+                                <option>India</option>
+                                <option>Korea</option>
+                                <option>Nepal</option>
+                                <option>United Kingdom</option>
+                                <option>United States of America</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td><label>Languages known</label></td>
+                        <td> <input type="checkbox">English
+                            <input type="checkbox">Kannada
+                            <input type="checkbox">Hindi
+                            <input type="checkbox">Telugu</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><input type="checkbox"> Hereby I declare all the given details are true</td>
+                    </tr>
+
+                    <tr>
+                    <td colspan="2" style="text-align:right"> log in to <a href="https://codemithra.com/">Ethnus</a> website</td>
+                    </tr>
+
+                    
+                
+                </tbody></table>
+                <br>
+                <input type="submit" value="Register">
+            </form>
+        </center>
+    
+     <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+    </body></html>

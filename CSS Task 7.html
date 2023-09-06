@@ -1,0 +1,138 @@
+
+<!-- saved from url=(0040)http://127.0.0.1:5500/mern/csstask7.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><doctype html="">
+
+    
+        <title>CSS Task 7</title>
+        <style>
+            body{
+                background-color: rgb(105, 13, 71);
+                border-right: 90px solid rgb(179, 5, 118);
+                border-left: 90px solid rgb(179, 5, 118);
+                border-top: 40px solid rgb(179, 5, 118);
+                border-bottom: 40px solid rgb(179, 5, 118);
+                color:aliceblue;
+                width:350;
+                text-align: center;
+                font-size: larger;
+                margin: 90px auto;
+            }
+            input[type=text]{
+                padding: 2px;
+            }
+            input[type=submit]{
+                padding:10px 20px;
+                width:100%;
+                border-radius: 5px;
+                border-color: white;
+                background-color: rgb(245, 247, 250);
+                color: 5px solid black;
+                cursor: pointer;
+            }
+            form{
+                padding: 19px;
+            }
+
+        </style>
+    
+    
+        <form>
+            <table>
+                <tbody><tr>
+                    <td><label for="fn">Name: <abel></abel></label></td>
+                    <td><input type="text" name="fn" placeholder="your name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fn">Email:</label></td>
+                    <td><input type="text" name="fn" placeholder="your email"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pwd">Password</label></td>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fn">Phone Number:</label></td>
+                    <td><input type="tel" name="fn"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>Male:<input type="radio" name="gender"> 
+                        Female:<input type="radio" name="gender"> 
+                        Other:<input type="radio" name="gender"> 
+                    </td>   
+                </tr>
+
+                <tr>
+                    <td><label>Language: </label></td>
+                    <td>
+                    <select>
+                    <option>Select language</option>
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Bengali</option>
+                    <option>Telugu</option>
+                    <option>Tamil</option>
+                    </select>
+                    </td>
+                </tr>
+                
+
+            
+
+            <tr>
+                <td><label for="fn">Zip Code:</label></td>
+                <td><input type="text" name="fn"></td>
+            </tr>
+
+            <tr>
+                <td><label>About:</label></td>
+                <td><textarea placeholder="Write abouut yourself..."></textarea></td>
+            </tr>
+             </tbody></table>
+             <br>
+             <input type="submit" value="Register" style="font-size: larger">
+        </form>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</doctype></body></html>

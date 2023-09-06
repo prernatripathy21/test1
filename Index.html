@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/mern/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Index</title>
+    </head>
+    <body>
+        <style> 
+        h3, h2{text-align:center;
+            color:rgb(109, 25, 25);
+            text-decoration: underline;}
+        table.one, table.two{
+            text-align: center;
+            margin: 0px auto;
+            
+        }
+        th{
+            color:rgb(51, 75, 104);
+        }
+        body{
+            background-color: rgb(234, 156, 128);
+        }
+        hr{
+            border: 1px solid black;
+        }
+        
+        </style> 
+        <h2>INDEX</h2>
+        <br><hr>
+        <h3>HTML Tasks:</h3>
+        <table class="one" border="1" bordercolor="black" border-collapse="collapse" cellpadding="10" style="width:70%" text-align="center">
+            <tbody><tr>
+                <th>TASKS</th>
+                <th>LINKS</th>
+            </tr>
+            <tr>
+                <td>TASK 1</td>
+                <td><a href="http://127.0.0.1:5500/mern/htmltask1.html" target="_blank"> click here for task 1</a></td>
+            </tr>
+            <tr>
+                <td>TASK 2</td>
+                <td><a href="http://127.0.0.1:5500/mern/htmltask2.html" target="_blank"> click here for task 2</a></td>
+            </tr>
+            <tr>
+                <td>TASK 3</td>
+                <td><a href="http://127.0.0.1:5500/mern/htmltask3.html" target="_blank"> click here for task 3</a></td>
+            </tr>
+            <tr>
+                <td>TASK 4</td>
+                <td><a href="http://127.0.0.1:5500/mern/htmltask4.html" target="_blank"> click here for task 4</a></td>
+            </tr>
+            <tr>
+                <td>TASK 5</td>
+                <td><a href="http://127.0.0.1:5500/mern/htmltask5.html" target="_blank"> click here for task 5</a></td>
+            </tr>
+            </tbody></table>
+            <br><hr>
+            <h3>CSS Tasks:</h3>
+            <table class="two" border="1" bordercolor="black" border-collapse="collapse" cellpadding="10" style="width:70%" text-align="center">
+                <tbody><tr>
+                    <th>TASKS</th>
+                    <th>LINKS</th>
+                </tr>
+            <tr>
+                <td>TASK 1</td>
+                <td><a href="http://127.0.0.1:5500/mern/csstask1.html" target="_blank"> click here for task 1</a></td>
+            </tr>
+            <tr>
+                <td>TASK 2</td>
+                <td><a href="http://127.0.0.1:5500/mern/csstask2.html" target="_blank"> click here for task 2</a></td>
+            </tr>
+            <tr>
+                <td>TASK 3</td>
+                <td><a href="http://127.0.0.1:5500/mern/csstask3.html" target="_blank"> click here for task 3</a></td>
+            </tr>
+            <tr>
+                <td>TASK 4</td>
+                <td><a href="http://127.0.0.1:5500/mern/csstask4.html" target="_blank"> click here for task 4</a></td>
+            </tr>
+            <tr>
+                <td>TASK 5</td>
+                <td><a href="http://127.0.0.1:5500/mern/csstask5.html" target="_blank"> click here for task 5</a></td>
+            </tr>
+            <tr>
+                <td>TASK 6</td>
+                <td><a href="http://127.0.0.1:5500/mern/csstask6.html" target="_blank"> click here for task 6</a></td>
+            </tr>
+            <tr>
+                <td>TASK 7</td>
+                <td><a href="http://127.0.0.1:5500/mern/csstask7.html" target="_blank"> click here for task 7</a></td>
+            </tr>
+        </tbody></table>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

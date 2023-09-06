@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/mern/csstask3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CSS Task 3</title>
+        <style>
+            #customers {
+              font-family: Arial, Helvetica, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            #customers td, #customers th {
+              border: 1px solid #ddd;
+              padding: 8px;
+            }
+            
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+            
+            #customers tr:hover {background-color: #ddd;}
+            
+            #customers th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #04AA6D;
+              color: white;
+            }
+            </style>
+    </head>
+    <body>
+        <h2>Task 3</h2>
+        <table id="customers">
+            <tbody><tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+            </tr>
+
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>Berglunds snabbkop</td>
+                <td>Christina Berglund</td>
+                <td>Sweden</td>
+            </tr>
+
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+
+            <tr>
+                <td>Ernest Handel</td>
+                <td>Roland Mendel</td>
+                <td>Autria</td>
+            </tr>
+
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+
+            <tr>
+                <td>Koniglich Essen</td>
+                <td>Philip Cramer</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshhi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+
+            <tr>
+                <td>Magazzni Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+
+
+        </tbody></table>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

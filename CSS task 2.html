@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/mern/csstask2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CSS task 2</title>
+        <style>
+            ul.one{
+                list-style-type:none;
+                margin: 5px;
+                border-radius: 1px;
+                border: 1px solid #555;
+                padding:5px 10px;
+                width: 80px;
+                background-color:rgba(87, 233, 233, 0.762);
+            }
+            li a.one{
+                display:block;
+                color:darkblue;
+                margin:5px;
+                padding:4px 4px;
+                text-decoration:none;
+            }
+            li a.one:hover{   
+                background-color:gold;
+                color:white;
+            }
+
+            ul.two {
+  list-style-type: none;
+  border:1px solid#555;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color:lightgrey;
+ 
+}
+
+li a.two {
+  float: left;
+}
+
+li a.two {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid blue;
+}
+
+li a.two:hover {
+  background-color:darkslategrey;
+  color: white;
+}
+        </style>
+    </head>
+        
+    <body>
+       <h2>Vertical Navigation Bar</h2>
+        <ul class="one">
+            <li><a class="one" href="http://127.0.0.1:5500/mern/csstask2.html#Home">Home</a></li>
+            <li><a class="one" href="http://127.0.0.1:5500/mern/csstask2.html#Java">Java</a></li>
+            <li><a class="one" href="http://127.0.0.1:5500/mern/csstask2.html#CSS">CSS</a></li>
+            <li><a class="one" href="http://127.0.0.1:5500/mern/csstask2.html#HTML">HTML</a></li>
+            <li><a class="one" href="http://127.0.0.1:5500/mern/csstask2.html#Bootstrap">Bootstrap</a></li>
+        </ul>
+       
+    
+
+        <h2>Horizontal Navigation Bar</h2>
+
+     <ul class="two">
+    
+     <li><a class="two" href="http://127.0.0.1:5500/mern/csstask2.html#home">Home</a></li>
+     <li><a class="two" href="http://127.0.0.1:5500/mern/csstask2.html#Java">Java</a></li>
+     <li><a class="two" href="http://127.0.0.1:5500/mern/csstask2.html#contact">HTML</a></li>
+     <li><a class="two" href="http://127.0.0.1:5500/mern/csstask2.html#about">CSS</a></li>
+     </ul>
+   
+
+    
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

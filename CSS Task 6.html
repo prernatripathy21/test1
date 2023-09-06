@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/mern/csstask6.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS Task 6</title>
+    <style>
+        body{
+            background-color: white;
+            text-align: center;
+            font-size: large;
+        }
+        input[type=submit]{
+            background-color: rgb(7, 171, 86);
+            color: aliceblue;
+            border:none;
+            width: 200px;
+            margin: 5px 2px;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+           
+        }
+        input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 4px;
+  display:inline-block;
+  border: 1px solid #e3cfcf;
+  box-sizing:border-box;
+}
+        input[type=reset]{
+            background-color: red;
+            border-radius: 2px;
+            border-color: red;
+            color:white;
+            padding: 3px 20px;
+            float: left;
+            cursor: pointer;
+        }
+        form{
+            text-align: justify;
+            margin: 0 auto;
+            width:450px;
+
+        }
+        button{
+            width:100%;
+            margin:3px 4px;
+            border: 20px rgb(1, 10, 18);
+            background: #e7e1e1;
+            padding:10px;
+        }
+        span.psw {
+     display: block;
+     float: right;
+     font-size: larger;
+  }
+
+       
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+        <img src="./CSS Task 6_files/ss56226.png" alt="picture" width="300px" height="250px">
+        </div>
+     <div>
+        <form>
+        <br>
+        <label for="fn"><b>Username</b></label><br>
+        <input type="text" name="fn" placeholder="Enter Username"><br>
+
+        <label for="pwd"><b>Password</b></label><br>
+        <input type="password" name="pwd" placeholder="Enter Password"><br><br>
+
+        <input type="submit" value="Login"><br>
+
+        <input type="checkbox" checked="checked" style="margin:1px 10px;">Remember me<br><br>
+
+        <button>
+              <input type="reset" value="Cancel">
+              <span class="psw">Forgot <a href="http://127.0.0.1:5500/mern/csstask6.html#">password?</a></span>
+        </button>
+        </form>
+       </div>
+    </center>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
